@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>居酒屋 我が家 案内板</title>
 </head>
+<script src="js/script.js" defer></script>
 
 <body>
-    <script src="js/script.js"></script>
+    <div id="loading"></div>
     <header>
         <nav>
             <ul>
@@ -20,23 +21,58 @@
                 <li><a href="#">ご意見、ご感想</a></li>
             </ul>
         </nav>
-        <h1>居酒屋 我が家</h1>
-        <p><i>いつもの味、いつもの場所</i></p>
+        <!--試作2 <h1 id="yago">
+            <span class="fade">居</span>
+            <span class="fade">酒</span>
+            <span class="fade">屋</span>
+            <span class="fade"> </span>
+            <span class="fade">我</span>
+            <span class="fade">が</span>
+            <span class="fade">家</span>
+        </h1> -->
+        <h1 id="yago">居酒屋 我が家</h1>
+        <p id="sub"><i>いつもの味、いつもの場所</i></p>
     </header>
     <main>
         <section id="shoukai">
             <h2>当店のこだわり</h2>
             <div class="kodawari">
-                <img src="image/image5.jpg" alt="">
+                <img id="kenkou" src="image/image5.jpg" alt="">
                 <p>食事とお酒で心と体を健康に</p>
             </div>
             <div class="kodawari">
                 <p>ゆったりとした時間と空間を</p>
-                <img src="image/zashiki2.jpg" alt="">
+                <img id="kuukan" src="image/zashiki2.jpg" alt="">
             </div>
-            <div>
-                <p>おしながき</p>
-                <div></div>
+
+            <div class="kodawari">
+                <div id="gallery">
+                    <img src="image/tan1.jpg" alt="">
+                </div>
+                <div>
+                    <p>おしながき</p>
+                    <p>単品メニュー</p>
+                    <div class="itiran">
+                        <img src="image/tan1.jpg" alt="">
+                        <img src="image/tan6.jpg" alt="">
+                        <img src="image/tan8.jpg" alt="">
+                        <img src="image/tan13.jpg" alt="">
+                    </div>
+                    <p>定食</p>
+                    <div class="itiran">
+                        <img src="image/set1.jpg" alt="">
+                        <img src="image/set2.jpg" alt="">
+                        <img src="image/set3.jpg" alt="">
+                        <img src="image/set4.jpg" alt="">
+                    </div>
+                    <p>飲み物・弁当</p>
+                    <div class="itiran">
+                        <img src="image/drink1.jpg" alt="">
+                        <img src="image/drink3.jpg" alt="">
+                        <img src="image/drink4.jpg" alt="">
+                        <img src="image/bento1.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </section>
         <section id="info">
